@@ -758,6 +758,8 @@ section,
   section,
   .section {
     scroll-margin-top: 58px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
