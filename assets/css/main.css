@@ -1779,13 +1779,103 @@ section,
   filter: brightness(50%);
 }
 
+.hero-image1 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/b1.png') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image2 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/b2.png') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image3 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/b3.png') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image4 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg4.png') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image5 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg5.png') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image6 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg6.png') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image7 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg7.jpg') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image8 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg8.jpg') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image9 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg9.jpg') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image10 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg10.jpg') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
 .hero-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  
 }
 
 .get-in-touch {
@@ -2029,4 +2119,65 @@ section,
 .marquee{
   padding: 10px 0 20px 0;
 }
+
+
+/* .accordion {
+  border-left: none;
+  border-right: none;
+} */
+
+.accordion-item {
+  border-bottom: none;
+  border: none !important;
+
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  background: #fff;
+  color: #ffc451;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px !important;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background: #f5f5f5;
+}
+
+.accordion-header::after {
+  content: '';
+  display: inline-block;
+  font-size: 18px !important;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #ffc451;
+  border-top: 2px solid #ffc451;
+  transform: rotate(135deg);
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  transform: rotate(-45deg); /* Up arrow */
+}
+
+.accordion-content {
+  padding: 15px;
+  background: #f9f9f9;
+  display: none;
+  color: #333;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
 /* contact */
