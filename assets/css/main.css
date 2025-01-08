@@ -1846,7 +1846,7 @@ section,
   position: relative;
   height: 50vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background: #000 url('../img/BG/bg8.jpg') no-repeat center center !important;
+  background: #000 url('../img/BG/bg8.png') no-repeat center center !important;
   filter: brightness(50%);
   object-fit: contain; 
 }
@@ -1855,7 +1855,7 @@ section,
   position: relative;
   height: 50vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background: #000 url('../img/BG/bg9.jpg') no-repeat center center !important;
+  background: #000 url('../img/BG/bg9.png') no-repeat center center !important;
   filter: brightness(50%);
   object-fit: contain; 
 }
@@ -1865,6 +1865,42 @@ section,
   height: 50vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   background: #000 url('../img/BG/bg10.jpg') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image11 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg11.jpeg') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain;
+}
+
+.hero-image12 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg12.jpg') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image13 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg13.png') no-repeat center center !important;
+  filter: brightness(50%);
+  object-fit: contain; 
+}
+
+.hero-image14 {
+  position: relative;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #000 url('../img/BG/bg14.png') no-repeat center center !important;
   filter: brightness(50%);
   object-fit: contain; 
 }
@@ -1939,7 +1975,7 @@ section,
 
 .support-button {
   padding: 0.8rem 1.5rem;
-  background-color: #f57c00;
+  background-color: #ffc451;
   color: white;
   border: none;
   border-radius: 5px;
@@ -1950,7 +1986,7 @@ section,
 }
 
 .support-button:hover {
-  background-color: #e66a00;
+  background-color: #ffc107;
 }
 
 /* Additional Info Section */
@@ -2082,14 +2118,14 @@ section,
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   color: #fff;
-  background-color: #d9822f;
+  background-color: #ffc451;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .submit-btn:hover {
-  background-color: #c3712c;
+  background-color: #ffc107;
 }
 
 @media (max-width: 768px) {
