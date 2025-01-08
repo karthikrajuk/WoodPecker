@@ -2008,3 +2008,25 @@ section,
   }
 }
 /* Support */
+
+/* Contact */
+.contentcontact{
+  background-color: #fff; /* Light gray background */
+  padding: 0rem;
+  text-align: center;
+  transform: skewY(-4deg);
+  margin-top: -4rem;
+}
+
+.form-container-contact{
+  margin: 0rem auto;
+  padding: 2rem;
+  background-color: #e9edf3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.marquee{
+  padding: 10px 0 20px 0;
+}
+/* contact */
