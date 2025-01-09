@@ -2227,14 +2227,14 @@ section,
 /* contact */
 
 /*sreelakshmi */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #navmenu ul {
       display: none;
       flex-direction: column;
       background-color: #fff;
       padding: 10px;
       position: absolute;
-      top: 60px; /* Adjust based on header height */
+      top: 60px; 
       right: 0;
       width: 100%;
       z-index: 1000;
@@ -2263,9 +2263,9 @@ section,
   #navmenu ul li a:hover {
       background-color: #f5f5f5;
   }
-}
+} */
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   #navmenu ul {
       display: flex;
       flex-direction: row;
@@ -2274,4 +2274,4 @@ section,
   .mobile-nav-toggle {
       display: none;
   }
-}
+} */
