@@ -25,7 +25,7 @@
 <?php 
 
 
-    $to = "sreelakshmi.p@softcons.net"; // this is your Email address
+    $to = "karthik.r@softcons.net"; // this is your Email address
    
     //$to = "akshara.atur@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
