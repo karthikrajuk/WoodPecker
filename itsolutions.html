@@ -43,23 +43,29 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
+      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo1.png" alt="logo">
-        <h1 class="sitename" style="color: black; font-size: 16px;">Woodpecker Expert Solutions Private Limited.</h1>
-         </h2>
-        <!-- <span>.</span> -->
+        <div class="logo-container" style="position: relative; display: inline-block;">
+          <img src="assets/img/logo1.png" alt="logo">
+          <span class="trademark-symbol"
+            style="position: absolute; top: 2px; right: 10px; font-size: 5px; color: black;"><b>TM</b></span>
+          <!-- ™ -->
+        </div>
+
+        <h1 class="sitename" style="color: black; font-size: 16px; margin: 0;">Woodpecker Expert Solutions.<br>
+          <p class="punchline" style="color: gray; font-size: 10px; margin: 2px; font-weight: 400;">'Empower Potential
+            Deliver Excellence'</p>
+        </h1>
+
+
       </a>
+
+      <!-- Navigation Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active color-black
-            ">Home<br></a></li>
-          <!-- <li><a href="#about" class="color-black
-            ">About</a></li> -->
-          <!-- <li><a href="#services">Services</a></li> -->
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a href="#team">Team</a></li> -->
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html" class="active color-black">Home</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="itservice.html">Managed IT Services</a></li>
               <li><a href="itsupport.html">IT Support</a></li>
@@ -69,48 +75,47 @@
               <li><a href="avsolutions.html">Audio-Video Solutions</a></li>
             </ul>
           </li>
-           <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown">
+            <a href="#"><span>Training</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown">
+                <a href="#"><span>Apple</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li> -->
-              <li class="dropdown"><a href="#"><span>Training</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                   <li class="dropdown"><a href="#"><span>Apple</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                    <li><a href="macOs.html">macOS for new to Mac Users </a></li>
-                    <li><a href="advancedtraining.html">Advanced Training for Seasoned Mac Users</a></li>
-                    <li><a href="experiencedprofessionals.html">IT Training - Aspiring and Experienced Professionals </a></li>
+                  <li><a href="macOs.html">macOS - Basic</a></li>
+                  <li><a href="advancedtraining.html">macOS - Advanced</a></li>
+                  <li><a href="experiencedprofessionals.html">IT Training</a></li>
                 </ul>
               </li>
-                  <li><a href="itsolutions.html">IT Solutions</a></li>
-                  <li><a href="softskills.html">Soft Skills</a></li>
-                  <li><a href="acctivitybasedtraining.html">Activity Based Training</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="approach.html">Our Approach</a></li>
-                  <li><a href="accreditationsandpartners.html">Accreditations And Partners</a></li>
-                </ul>
-              </li>
+              <li><a href="itsolutions.html">IT Solutions</a></li>
+              <li><a href="softskills.html">Soft Skills</a></li>
+              <li><a href="imagemanagement.html">Image Management</a></li>
+              <li><a href="acctivitybasedtraining.html">Activity Based Training</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><span>About Us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="approach.html">Our Approach</a></li>
+              <li><a href="accreditationsandpartners.html">Accreditations And Partners</a></li>
+              <li><a href="ourvision.html">Our Vision</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <!-- Mobile Buttons -->
+          <li class="btn-mobile"><a href="contact.html">Contact</a></li>
+          <li class="btn-mobile"><a href="support.html">Support</a></li>
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-     <!--  <a class="btn-getstarted" href="https://wa.me/+919035008500">Support
-      </a> -->
-     
-    </div>
-    <div style="display: inline-flex; margin-right: 20px;">  
-      <button class="btn-header"><a href="contact.html">Contact</a></button>
-      <button class="btn-header"><a href="support.html">Support</a></button>
+      <!-- Desktop Buttons -->
+      <div class="btn-group">
+        <button class="btn-header"><a href="contact.html">Contact</a></button>
+        <button class="btn-header"><a href="support.html">Support</a></button>
+      </div>
+
     </div>
   </header>
 
@@ -149,13 +154,15 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
   
           <div class="row gy-4">
-            <div class="col-lg-6 justify-content-between" style="text-align: justify; padding-right: 35px;">
-              
+            <div class="col-lg-6 justify-content-between" style="text-align: justify; padding-right: 15px;">
+              <img src="assets/img/it2.jpg" class="img-fluid" alt="" style=" border-radius: 15px; margin-bottom: 50px; margin-top: 20px;">
+
               <h4>IT Solutions for Your Business Needs</h4>
               <p>At Woodpecker Expert Solutions, we offer comprehensive IT solutions tailored to meet the diverse needs of your business. With a team of professionals possessing deep expertise in both hardware and software, we are dedicated to providing end-to-end solutions designed to optimise your operations and enhance productivity.</p>
               
               <p>At Woodpecker Expert Solutions, we pride ourselves on delivering innovative and reliable IT solutions that empower your business to thrive in today’s fast-paced digital world. From hardware to software, MDM to tech enablement, we provide everything you need to boost efficiency, secure your data, and facilitate seamless collaboration across your teams. Let us be your trusted partner in IT, providing expert solutions that align with your business objectives.</p>
                             
+
             </div>
             <!-- <div class="col-lg-4 justify-content-between">
               <img src="assets/img/4.jpg" class="img-fluid" alt="" style=" border-radius: 15px; margin-bottom: 100px;">
@@ -163,7 +170,7 @@
              
   
             </div> -->
-            <div class="col-lg-6 accordion">
+            <div class="col-lg-6 accordion" style="padding-left: 15px;">
                     <div class="accordion-item">
                       <div class="accordion-header">End-Point Devices</div>
                       <div class="accordion-content">
@@ -299,28 +306,49 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture1.png" alt="Image 1" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture2.png" alt="Image 2" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture3.png" alt="Image 3" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture4.png" alt="Image 4" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture5.png" alt="Image 5" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture6.png" alt="Image 6" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture7.png" alt="Image 7" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture8.png" alt="Image 8" style="width: 100px; height: 50px; "></div>
-            <!-- <div class="swiper-slide"><img src="assets/img/accredations/Picture9.png" alt="Image 9" style="width: 100px; height: 50px; "></div> -->
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture10.png" alt="Image 10" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture11.png" alt="Image 11" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture12.png" alt="Image 12" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture13.png" alt="Image 13" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture14.png" alt="Image 14" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture15.png" alt="Image 15" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture16.png" alt="Image 16" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture17.png" alt="Image 17" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture18.png" alt="Image 18" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture19.png" alt="Image 19" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture20.png" alt="Image 20" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture21.png" alt="Image 20" style="width: 100px; height: 50px; "></div>
-            <div class="swiper-slide"><img src="assets/img/accredations/Picture22.png" alt="Image 20" style="width: 100px; height: 50px; "></div>
+            <div class="swiper-slide"><img src="assets/img/accredations/Picture1.png" alt="Image 1"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture2.png" alt="Image 2"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture3.png" alt="Image 3"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture4.png" alt="Image 4"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture5.png" alt="Image 5"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture6.png" alt="Image 6"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture7.png" alt="Image 7"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture8.png" alt="Image 8"
+              style="width: 180px; height: 50px; "></div>
+          <!-- <div class="swiper-slide"><img src="assets/img/accredations/Picture9.png" alt="Image 9" style="width: 180px; height: 50px; "></div> -->
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture10.png" alt="Image 10"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture11.png" alt="Image 11"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture12.png" alt="Image 12"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture13.png" alt="Image 13"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture14.png" alt="Image 14"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture15.png" alt="Image 15"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture16.png" alt="Image 16"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture17.png" alt="Image 17"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture18.png" alt="Image 18"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture19.png" alt="Image 19"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture20.png" alt="Image 20"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture21.png" alt="Image 20"
+              style="width: 180px; height: 50px; "></div>
+          <div class="swiper-slide"><img src="assets/img/accredations/Picture22.png" alt="Image 20"
+              style="width: 180px; height: 50px; "></div>
             
 
           </div>
@@ -340,12 +368,18 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo1.png" alt="logo">
+              <div class="logo-container" style="position: relative; display: inline-block;">
+                <img src="assets/img/logo1.png" alt="logo">
+                <span class="trademark-symbol"
+                  style="position: absolute; top: 2px; right: 0px; font-size: 5px; color: black;">TM</span>
+                <!-- ™ -->
+              </div>
             </a>
             <div class="footer-contact pt-3">
               <p
                 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px;">
-                <b>Woodpecker Expert Solutions Private Limited.,</b></p>
+                <b>Woodpecker Expert Solutions Private Limited.</b>
+              </p>
               <p
                 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                 #583, 1st Floor, 7th Cross 10th Main,</p>
@@ -354,14 +388,17 @@
                 HAL 2nd Stage ,Indiranagar, Bangalore - 560 038.</p>
               <p
                 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                <strong>Phone:</strong> <span>: +91 90350 08500 / +91 90367 90360</span></p>
+                <strong>Phone:</strong> <span>: +91 90350 08500 / +91 90367 90360</span>
+              </p>
               <p
                 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                <strong>Email:</strong> <span>info@wprespl.com</span></p>
+                <strong>Email:</strong> <span>info@wprespl.com</span>
+              </p>
             </div>
             <!-- class="mt-3"  -->
             <div class="social-links d-flex mt-4">
               <a href="" style="color: white !important"><i class="bi bi-twitter-x"></i></a>
+              <!-- <a href="" style="color: white !important"><i class="bi bi-facebook"></i></a> -->
               <a href="" style="color: white !important"><i class="bi bi-instagram"></i></a>
               <a href="https://in.linkedin.com/in/applecertifiedtrainer" style="color: white !important"><i
                   class="bi bi-linkedin"></i></a>
@@ -370,12 +407,22 @@
             </div>
           </div>
 
+          <!-- <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
+            </ul>
+          </div> -->
 
           <div class="col-lg-2 col-md-3 footer-links" style="padding-top: 65px;">
             <h4
               style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
               Our Services</h4>
-              <ul
+            <ul
               style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
 
               <li><i class="bi bi-chevron-right"></i> <a href="itservice.html" style="color: white !important">
@@ -384,12 +431,12 @@
                   IT Support</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="consulting.html" style="color: white !important">
                   Consulting</a></li>
-                  <li><i class="bi bi-chevron-right"></i> <a href="training.html" style="color: white !important">
-                    Training</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="imagemanagement.html" style="color: white !important">
-                      Image Management</a></li>
-                      <li><i class="bi bi-chevron-right"></i> <a href="avsolutions.html" style="color: white !important">
-                        Audio-Video Solutions</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="training.html" style="color: white !important">
+                  Training</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="imagemanagement.html" style="color: white !important">
+                  Image Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="avsolutions.html" style="color: white !important">
+                  Audio-Video Solutions</a></li>
             </ul>
           </div>
 
@@ -399,6 +446,7 @@
               Certifications</h4>
             <ul
               style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              <!-- <i class="bi bi-chevron-right"></i> -->
               <li><a href="" style="color: white !important">
                   Apple Certified Trainer</a></li>
               <li> <a href="" style="color: white !important">
@@ -412,7 +460,17 @@
             </ul>
           </div>
 
-        
+          <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div> -->
 
         </div>
       </div>

@@ -159,8 +159,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 50px;
+  margin-right: 15px;
 }
 
 .header .logo h1 {
@@ -481,11 +481,11 @@ h6 {
 
 .footer .footer-about .logo {
   line-height: 1;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 6px;
 }
 
@@ -1928,7 +1928,7 @@ section,
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 30px !important;
   font-weight: bold;
   color: white;
   margin-top: 10%;
@@ -2048,6 +2048,16 @@ section,
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem;
 }
+
+ /* .img-fluid {
+  margin-left: 20px !important;
+ } */
+
+ .col-log-6 {
+  padding-right: 0px !important;
+ }
+
+
 
 .additional-info { padding: 1rem; }
 
@@ -2230,6 +2240,17 @@ section,
   margin: 0;
 }
 
+
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
 /* contact */
 
 /*sreelakshmi */
@@ -2281,3 +2302,8 @@ section,
       display: none;
   }
 } */
+
+
+
+
+
