@@ -25,11 +25,11 @@
 <?php 
 
 
-    $to = "karthik.r@softcons.net"; // this is your Email address
+    $to = "diwakar.l@softcons.net"; // this is your Email address
    
     //$to = "akshara.atur@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
-    $name = $_POST['first-name'];
+    $name = $_POST['name'];
     
     $subject = "Inquiry";
   
