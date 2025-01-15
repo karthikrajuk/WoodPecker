@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email.
     if (mail($recipient, $subject, $email_content, $headers)) {
-        echo "<p class='success'>Thank you! Your message has been sent.</p>";
+        echo "<script>alert('Message sent successfully!'); window.location.href = 'contact.html';</script>";
     } else {
         echo "<p class='error'>Oops! Something went wrong, and we couldn’t send your message.</p>";
     }
