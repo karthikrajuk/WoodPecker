@@ -1,34 +1,32 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = strip_tags(trim($_POST["name"]));
-    // $lastname = strip_tags(trim($_POST["last-name"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $phone = strip_tags(trim($_POST["phone"]));
-    $message = trim($_POST["message"]);
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Capture form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $message = htmlspecialchars($_POST['message']);
 
-    // Set recipient email address.
-    $recipient = "diwakar.l@softcons.net, karthik.r@softcons.net";
+    // Email configuration
+    $to = "diwakar.l@softcons.net"; // Replace with your email address
+    $subject = "New Contact Form Submission";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    // Set email subject.
-    $subject = "Contact Form Submission from $name";
+    // Email body
+    $body = "You have received a new message from your website contact form:\n\n";
+    $body .= "Name: $name\n";
+    $body .= "Email: $email\n\n";
+    $body .= "Email: $phone\n\n";
+    $body .= "Message:\n$message\n";
 
-    // Build the email content.
-    $email_content = "First Name: $name\n";
-    // $email_content .= "Last Name: $lasttname\n";
-    $email_content .= "Email: $email\n";
-    $email_content .= "Phone Number: $phone\n";
-    $email_content .= "Message:\n$message\n";
-
-    // Build the email headers.
-    $headers = "From: $name <$email>";
-
-    // Send the email.
-    if (mail($recipient, $subject, $email_content, $headers)) {
-        echo "<script>alert('Message sent successfully!'); window.location.href = 'contact.html';</script>";
+    // Send email
+    if (mail($to, $subject, $body, $headers)) {
+        echo "<script>alert('Message sent successfully!'); window.location.href = 'index.html';</script>";
     } else {
-        echo "<p class='error'>Oops! Something went wrong, and we couldn’t send your message.</p>";
+        echo "<script>alert('There was a problem sending your message. Please try again later.'); window.location.href = 'index.html';</script>";
     }
 } else {
-    echo "<p class='error'>There was a problem with your submission, please try again.</p>";
+    echo "Invalid request method.";
 }
 ?>
