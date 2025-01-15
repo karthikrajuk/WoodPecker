@@ -46,11 +46,11 @@
     echo "<h2>Success!<br><br>
     Mail Sent. Thank you " . $name . ". We will get in touch with you shortly.<br><br>
     Thank you!</h2>";
-    header( "Refresh: 2;url=contact.html" );
+    header( "Refresh: 2;url=index.html" );
     }else
     {
         echo "<h2>Mail Not Sent. Please check your email id.</h2>";
-    header( "Refresh: 2;url=contact.html" );
+    header( "Refresh: 2;url=index.html" );
     }
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     
