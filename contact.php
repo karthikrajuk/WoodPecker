@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstname = strip_tags(trim($_POST["first-name"]));
-    $lastname = strip_tags(trim($_POST["last-name"]));
+    $name = strip_tags(trim($_POST["name"]));
+    // $lastname = strip_tags(trim($_POST["last-name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $phone = strip_tags(trim($_POST["phone"]));
     $message = trim($_POST["message"]);
@@ -10,17 +10,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipient = "diwakar.l@softcons.net, karthik.r@softcons.net";
 
     // Set email subject.
-    $subject = "Contact Form Submission from $firstname $lastname";
+    $subject = "Contact Form Submission from $name";
 
     // Build the email content.
-    $email_content = "First Name: $firstname\n";
-    $email_content .= "Last Name: $lasttname\n";
+    $email_content = "First Name: $name\n";
+    // $email_content .= "Last Name: $lasttname\n";
     $email_content .= "Email: $email\n";
     $email_content .= "Phone Number: $phone\n";
     $email_content .= "Message:\n$message\n";
 
     // Build the email headers.
-    $headers = "From: $firstname $lastname <$email>";
+    $headers = "From: $name <$email>";
 
     // Send the email.
     if (mail($recipient, $subject, $email_content, $headers)) {
