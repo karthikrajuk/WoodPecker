@@ -1,57 +1,34 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstname = strip_tags(trim($_POST["first-name"]));
+    $lastname = strip_tags(trim($_POST["last-name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $phone = strip_tags(trim($_POST["phone"]));
+    $message = trim($_POST["message"]);
 
-<style>
-	 body {
-                font-family: hkg;
-                color: #444444;
-				background:White;
-                overflow-x: hidden;
-            }
-			h2{
-				    font-family: -webkit-pictograph;
-    font-size: 28px;
-    margin-left: 16%;
-    color: #f4fbf7;
-    margin-top: 16%;
-    font-weight: 700;
-    box-shadow: black;
-    box-shadow: 0px 0px 30px rgb(234 236 244 / 25%);
-    padding: 50px;
-    float: left;
-    background: #817d83a6;
-    text-align: center;
-			}
-</style>
+    // Set recipient email address.
+    $recipient = "diwakar.l@softcons.net, karthik.r@softcons.net";
 
-<?php 
+    // Set email subject.
+    $subject = "Contact Form Submission from $firstname $lastname";
 
+    // Build the email content.
+    $email_content = "First Name: $firstname\n";
+    $email_content .= "Last Name: $lasttname\n";
+    $email_content .= "Email: $email\n";
+    $email_content .= "Phone Number: $phone\n";
+    $email_content .= "Message:\n$message\n";
 
-    $to = "diwakar.l@softcons.net"; // this is your Email address
-   
-    //$to = "akshara.atur@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $name = $_POST['name'];
-    
-    $subject = "Inquiry";
-  
-    $message = $_POST['message'] . "\n\nFrom\n" .$name;
-   
+    // Build the email headers.
+    $headers = "From: $firstname $lastname <$email>";
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    
-    
-   
-    
-    if(mail($to,$subject,$message,$headers)){
-    echo "<h2>Success!<br><br>
-    Mail Sent. Thank you " . $name . ". We will get in touch with you shortly.<br><br>
-    Thank you!</h2>";
-    header( "Refresh: 2;url=index.html" );
-    }else
-    {
-        echo "<h2>Mail Not Sent. Please check your email id.</h2>";
-    header( "Refresh: 2;url=index.html" );
+    // Send the email.
+    if (mail($recipient, $subject, $email_content, $headers)) {
+        echo "<p class='success'>Thank you! Your message has been sent.</p>";
+    } else {
+        echo "<p class='error'>Oops! Something went wrong, and we couldn’t send your message.</p>";
     }
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    
+} else {
+    echo "<p class='error'>There was a problem with your submission, please try again.</p>";
+}
 ?>
