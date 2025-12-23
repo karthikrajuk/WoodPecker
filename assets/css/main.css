@@ -2538,3 +2538,53 @@ section,
       grid-template-columns: 1fr;
   }
 }
+
+/* Mobile Hero Fix */
+@media (max-width: 768px) {
+
+  #hero {
+      min-height: 20vh !important;
+  }
+
+  #hero .container.p-0 img {
+      height: 20vh;
+      object-fit: cover;
+  }
+
+  /* Dark overlay for readability */
+  #hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+     /*  background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.45),
+          rgba(0, 0, 0, 0.65)
+      ); */
+      z-index: 1;
+  }
+
+  /* Text container */
+  #hero > .container:not(.p-0) {
+      z-index: 2;
+      width: 100%;
+      padding: 0 20px;
+      text-align: left;
+      top: 60% !important;
+  }
+
+  #hero h2 {
+      font-size: 0.9rem;
+      line-height: 1.25;
+      color: #ffffff;
+      margin-bottom: 12px;
+      max-width: 60%;
+  }
+
+  #hero h5 {
+      font-size: 0.7rem;
+      color: #ffffff;
+      font-weight: 400;
+      max-width: 60%;
+  }
+}
